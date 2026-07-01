@@ -20,7 +20,6 @@ plugins:
 compress_html:
   clippings: all
   comments: all
-  startings: [html, head, body]
 
 defaults:
   - scope:
