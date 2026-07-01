@@ -1,15 +1,14 @@
 /* Button style */
 .btn {
-  font-size: 22px;
-  font-family: $secondary-font;
-  text-transform: capitalize;
-  padding: 16px 44px;
-  border-radius: 5px;
+  font-size: 15px;
+  font-family: $primary-font;
+  padding: 12px 28px;
+  border-radius: 10px;
   font-weight: 600;
   border: 0;
   position: relative;
   z-index: 1;
-  transition: .2s ease;
+  transition: all .2s ease;
 
   &:focus {
     outline: 0;
@@ -20,14 +19,14 @@
     box-shadow: none;
   }
 
-  &-sm {
-    font-size: 15px;
-    padding: 10px 30px;
+  &-lg {
+    padding: 14px 32px;
+    font-size: 16px;
   }
 
-  &-xs {
-    padding: 5px 10px;
-    font-size: 15px;
+  &-sm {
+    font-size: 14px;
+    padding: 8px 20px;
   }
 }
 
@@ -36,28 +35,42 @@
   color: $white;
 
   &:active {
-    background: lighten($color: $primary-color, $amount: 10) !important;
+    background: $primary-dark !important;
   }
 
   &:hover {
-    background: lighten($color: $primary-color, $amount: 10);
+    background: $primary-dark;
+    color: $white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
   }
 
   &.focus,
   &.active {
-    background: lighten($color: $primary-color, $amount: 10) !important;
+    background: $primary-dark !important;
     box-shadow: none !important;
   }
 }
 
+.btn-outline-light {
+  background: transparent;
+  color: $white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: $white;
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
 
 .btn-transparent {
   background: transparent;
   color: $primary-color;
-  font-weight: bold;
+  font-weight: 600;
 
   &:active,
   &:hover {
-    color: $primary-color;
+    color: $primary-dark;
   }
 }

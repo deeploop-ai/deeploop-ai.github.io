@@ -2,267 +2,126 @@
 #-------------------------------
 # General Site Settings
 
-title: DeepLoop Labs
+title: DeepLoop AI Labs
 logo:
-author: DeepLoop Labs
-description: Empowering enterprises with enterprise AI solutions and elite technology talent.
+author: DeepLoop AI Labs
+description: Open-source AI infrastructure, custom AI development, and professional AI training.
 email: hello@deeploop.dev
 phone:
 address:
-copyright: Copyright &copy; 2025 DeepLoop Labs
+copyright: Copyright &copy; 2026 DeepLoop AI Labs
 
 menu:
+  - { name: Open Source, link: "/#opensource" }
+  - { name: Services, link: "/#services" }
   - { name: About, link: "/about" }
-  - { name: Blog, link: "/blog" }
-  # - { name: Portfolio, link: "/portfolio" }
-  # - { name: Contact, link: "/contact" }
+  - { name: Contact, link: "/#contact" }
 
 #-------------------------------
 # Google Analytics Section
-
-# Analytics helps you understand who visits your website.
-# Learn more at: http://support.google.com/analytics/answer/1008065
-
-# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
 google-analytics: # UA-XXXXXX-X
 
 #-------------------------------
 # Comment Section (Disqus)
 
-disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier:
 
 #-------------------------------
 # Hero Section
 
 hero:
-  hero-title: Building the Future of Enterprise Intelligence
-  hero-subtitle: We help forward-thinking companies integrate AI solutions and scale engineering teams.
+  hero-title: Building the Open AI Stack
+  hero-subtitle: We build agent-native infrastructure, deliver custom AI solutions, and train teams to ship production-grade AI systems.
+  hero-cta-primary: Explore Open Source
+  hero-cta-primary-link: "/#opensource"
+  hero-cta-secondary: Work With Us
+  hero-cta-secondary-link: "/#contact"
 
 social:
+  - { icon: "ti-github", link: "https://github.com/deeploop-ai" }
   - { icon: "ti-linkedin", link: "https://linkedin.com/company/deeplooplabs" }
-  - { icon: "ti-twitter", link: "#" }
-  - { icon: "ti-github", link: "https://github.com/deeplooplabs" }
 
 #-------------------------------
-# About (Section and Page)
+# Open Source Section
 
+opensource-title: Open Source Projects
+opensource-subtitle: Agent-native tools we build in the open — production-ready infrastructure for the AI era.
+opensource-projects:
+  - name: Memoss
+    tagline: Agent-native knowledge runtime
+    description: "LLM agents continuously build and maintain a living knowledge base from your sources — stored as plain Markdown, always current, always queryable."
+    url: "https://github.com/deeploop-ai/memoss"
+    tags: ["TypeScript", "MCP", "Knowledge Base"]
+    icon: "ti-book"
+    color: "#059669"
+
+  - name: Graviton
+    tagline: AI-native Backend-as-a-Service
+    description: "Appwrite-inspired BaaS built on Go — authentication, dynamic document database, file storage, function execution, and an embedded admin console."
+    url: "https://github.com/deeploop-ai/graviton"
+    tags: ["Go", "gRPC", "PostgreSQL"]
+    icon: "ti-server"
+    color: "#6366f1"
+
+  - name: Bluepilot
+    tagline: Markdown to interactive prototypes
+    description: "Write DESIGN.md and page specs in Markdown, generate runnable SvelteKit prototypes deterministically — fast design review without hand-coding UI."
+    url: "https://github.com/deeploop-ai/bluepilot"
+    tags: ["TypeScript", "SvelteKit", "Design Tools"]
+    icon: "ti-palette"
+    color: "#0ea5e9"
+
+#-------------------------------
 # About Section
-blurb: DeepLoop Labs bridges the gap between cutting-edge AI technology and enterprise-grade engineering. We partner with ambitious organizations to accelerate digital transformation through intelligent automation and world-class technical talent.
 
+blurb: DeepLoop AI Labs is an AI engineering lab focused on three pillars — open-source agent infrastructure, end-to-end AI project development for enterprises, and hands-on AI training that turns teams into builders.
 blurb-btn-link: "/about"
-blurb-btn-name: Learn More
-
-# About Page
+blurb-btn-name: Learn More About Us
 
 # Work Process Section
 work-process:
-  - title: "Discovery & Strategy"
-    icon: "assets/images/icons/plan.png"
-    content: "We analyze your business objectives, technical infrastructure, and AI readiness to formulate a comprehensive implementation strategy."
+  - title: "Discover"
+    icon: "ti-search"
+    content: "We map your business goals, data landscape, and AI readiness to define a clear, actionable roadmap."
 
-  - title: "Solution Design"
-    icon: "assets/images/icons/design.png"
-    content: "Our architects design scalable AI solutions tailored to your environment, ensuring seamless integration with existing systems."
+  - title: "Build"
+    icon: "ti-settings"
+    content: "Our engineers design and ship production AI systems — from LLM agents and RAG pipelines to full-stack AI applications."
 
-  - title: "Implementation"
-    icon: "assets/images/icons/print.png"
-    content: "We deploy and integrate AI solutions with your team, providing knowledge transfer and ongoing support for sustainable growth."
-
-# My Team Section
-# team:
-#   - title: "Qiulin"
-#     image: "assets/images/team/member-1.png"
-#     designation: "Project Manager"
-
-#-------------------------------
-# Skills Section
-
-skills-title: Our Capabilities
-skills:
-  - { name: "Machine Learning", color: "#7c3aed", value: "95%" }
-  - { name: "NLP & LLMs", color: "#2563eb", value: "90%" }
-  - { name: "Cloud Architecture", color: "#0891b2", value: "88%" }
-  - { name: "Data Engineering", color: "#059669", value: "85%" }
-
-#-------------------------------
-# Exprerience Section
-
-experience-title: Experience
-experience:
-
-#-------------------------------
-# Education Section
-
-# education-title: Education
-# education:
-#   - {
-#       name: Marters in UX Design,
-#       date: "2006",
-#       organization: "Masassusets Institute of Technology",
-#     }
-#   - {
-#       name: Honours in Fine Arts,
-#       date: "2004",
-#       organization: "Harvard University",
-#     }
-#   - {
-#       name: Higher Secondary Certificat,
-#       date: "2000",
-#       organization: "Cardiff School",
-#     }
-#   - {
-#       name: Secondary School Certificate,
-#       date: "1998",
-#       organization: "Cardiff School",
-#     }
+  - title: "Enable"
+    icon: "ti-light-bulb"
+    content: "We transfer knowledge through training and documentation so your team can operate and extend AI systems independently."
 
 #-------------------------------
 # Services Section
 
-services-title: Services
+services-title: What We Do
+services-subtitle: Beyond open source — we partner with organizations to build and adopt AI at scale.
 services:
-  - {
-      name: AI Solutions,
-      icon: ti-rocket,
-      description: "End-to-end AI implementation including machine learning pipelines, predictive analytics, and intelligent automation systems.",
-      active: true,
-    }
-  - {
-      name: Engineering Teams,
-      icon: ti-users,
-      description: "Scale your development team with vetted senior engineers skilled in cloud infrastructure, distributed systems, and modern frameworks.",
-      active: true,
-    }
-  - {
-      name: AI Consultation,
-      icon: ti-light-bulb,
-      description: "Strategic guidance on AI adoption, technology selection, and roadmap planning for enterprise digital transformation initiatives.",
-      active: true,
-    }
+  - name: AI Project Development
+    icon: ti-rocket
+    description: "End-to-end AI outsourcing — from LLM agent systems and RAG pipelines to computer vision and predictive analytics. We integrate with your stack and deliver production-ready solutions."
+    features:
+      - "LLM agents & MCP integrations"
+      - "RAG & knowledge systems"
+      - "Custom model fine-tuning"
+      - "Full-stack AI applications"
+    active: true
 
-#-------------------------------
-# Portfolio (Section and Page)
-
-# Portfolio Home Section
-# portfolio-home-items:
-#   - image: "assets/images/portfolio/item-1.png"
-#     url: "#"
-
-#   - image: "assets/images/portfolio/item-2.png"
-#     url: "#"
-
-#   - image: "assets/images/portfolio/item-3.png"
-#     url: "#"
-
-#   - image: "assets/images/portfolio/item-4.png"
-#     url: "#"
-
-#   - image: "assets/images/portfolio/item-5.png"
-#     url: "#"
-
-# Portfolio Page
-# portfolio-label:
-#   - { title: "UI/UX Design", type: "design" }
-#   - { title: "BRANDING", type: "branding" }
-#   - { title: "ILLUSTRATION", type: "illustration" }
-
-# portfolio-items:
-#   - image: "assets/images/portfolio/item-1.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "design"
-#       - type: "illustration"
-
-#   - image: "assets/images/portfolio/item-2.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "branding"
-
-#   - image: "assets/images/portfolio/item-3.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "illustration"
-
-#   - image: "assets/images/portfolio/item-6.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "design"
-#       - type: "branding"
-
-#   - image: "assets/images/portfolio/item-8.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "illustration"
-
-#   - image: "assets/images/portfolio/item-5.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "design"
-
-#   - image: "assets/images/portfolio/item-1.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "branding"
-
-#   - image: "assets/images/portfolio/item-3.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "design"
-#       - type: "illustration"
-#       - type: "branding"
-
-#   - image: "assets/images/portfolio/item-7.png"
-#     url: "#"
-#     portfolio-type:
-#       - type: "illustration"
-
-#-------------------------------
-# Testimonials Section
-
-# testimonial-items:
-#   - name: "Jesica Gomez"
-#     image: "assets/images/testimonial/client-1.png"
-#     designation: "CEO, Funder"
-#     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-
-#-------------------------------
-# Client Slider Section
-
-client-slider-items:
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
-
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
+  - name: AI Training
+    icon: ti-blackboard
+    description: "Hands-on workshops and curriculum for engineering teams — covering LLM application development, agent architecture, prompt engineering, and MLOps best practices."
+    features:
+      - "Corporate AI workshops"
+      - "Agent development bootcamps"
+      - "LLM application engineering"
+      - "Architecture review & mentoring"
+    active: true
 
 #-------------------------------
 # Contact Section
 
 contact-title: Get in Touch
 contact-email: hello@deeploop.dev
-contact-message: Ready to transform your business with AI? Send us a message and we'll schedule a consultation.
+contact-message: Whether you need a custom AI solution, team training, or want to contribute to our open-source projects — we'd love to hear from you.

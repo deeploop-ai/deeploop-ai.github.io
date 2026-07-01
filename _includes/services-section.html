@@ -1,22 +1,33 @@
 {% if site.data.settings.services %}
 <!-- services -->
-<section class="section">
+<section class="section section-services bg-gray" id="services">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <span class="section-label">Services</span>
         <h2 class="section-title">{{ site.data.settings.services-title }}</h2>
+        {% if site.data.settings.services-subtitle %}
+        <p class="section-subtitle">{{ site.data.settings.services-subtitle }}</p>
+        {% endif %}
       </div>
+    </div>
+    <div class="row">
       {% for service in site.data.settings.services %}
       {% if service.active %}
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card hover-shadow shadow service-card">
-          <div class="card-body text-center px-4 py-5">
-            <div class="service-icon-wrapper mb-4">
-              <i class="{{ service.icon }} icon-lg text-primary"></i>
-            </div>
-            <h4 class="mb-3">{{ service.name }}</h4>
-            <p>{{ service.description }}</p>
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="service-card-v2 h-100">
+          <div class="service-card-v2-icon">
+            <i class="{{ service.icon }}"></i>
           </div>
+          <h3 class="service-card-v2-title">{{ service.name }}</h3>
+          <p class="service-card-v2-desc">{{ service.description }}</p>
+          {% if service.features %}
+          <ul class="service-card-v2-features">
+            {% for feature in service.features %}
+            <li><i class="ti-check"></i> {{ feature }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
         </div>
       </div>
       {% endif %}

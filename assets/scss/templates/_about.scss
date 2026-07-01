@@ -1,3 +1,76 @@
+.page-hero {
+  padding: 160px 0 60px;
+  background: $hero-bg;
+  position: relative;
+
+  .section-label {
+    color: #a5b4fc;
+  }
+}
+
+.page-hero-title {
+  color: $white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.about-content {
+  h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid $border-color;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: $primary-color;
+    font-weight: 500;
+
+    &:hover {
+      color: $primary-dark;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 16px;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 12px;
+      line-height: 1.65;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: $primary-color;
+      }
+    }
+  }
+}
+
+// legacy
 .page-title-alt{
   padding: 350px 0 70px;
 }
@@ -10,46 +83,5 @@
   margin-top: -230px;
   @include desktop {
     margin-top: 0;
-  }
-}
-
-.page-title-alt{
-  .container{
-    position: relative;
-    z-index: 1;
-  }
-  .bg-shape-1{
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .bg-shape-2{
-    position: absolute;
-    left: 70px;
-    top: 100px;
-  }
-  .bg-shape-3{
-    position: absolute;
-    left: 30%;
-    top: 50px;
-    transform: rotate(180deg);
-  }
-
-  .bg-shape-4{
-    position: absolute;
-    left: 100px;
-    bottom: 100px;
-  }
-
-  .bg-shape-5{
-    position: absolute;
-    left: 40%;
-    bottom: -25px;
-  }
-
-  .bg-shape-6{
-    position: absolute;
-    bottom: 100px;
-    right: -100px;
   }
 }

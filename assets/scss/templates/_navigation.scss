@@ -1,17 +1,28 @@
 .navigation{
-  padding: 40px 130px;
+  padding: 20px 0;
   transition: .3s ease;
   &.nav-bg {
-    background-color: $primary-color;
-    padding: 15px 100px;
-    @include desktop {
-      padding: 15px 20px;
-    }
+    background-color: rgba($hero-bg, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 12px 0;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
   }
-  @include desktop {
-    padding: 20px;
-    background: $primary-color;
-  }
+}
+
+.navbar-brand-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, $primary-color, $secondary-color);
+  color: $white;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
 }
 
 .navbar{
@@ -21,33 +32,61 @@
     align-items: center;
     gap: 10px;
 
-    .navbar-logo {
-      max-height: 36px;
-      width: auto;
-      border-radius: 6px;
-    }
-
     .navbar-brand-text {
       font-family: $secondary-font;
-      font-size: 1.25rem;
-      font-weight: 700;
+      font-size: 1.1rem;
+      font-weight: 600;
       color: $white;
-      letter-spacing: 0.5px;
+      letter-spacing: -0.3px;
     }
   }
 
   .nav-item{
     .nav-link{
-      font-family: $secondary-font;
-      text-transform: uppercase;
-      padding: 15px;
-    }
-    &.active{
-      font-weight: bold;
+      font-family: $primary-font;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 16px;
+      color: #cbd5e1 !important;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $white !important;
+      }
     }
   }
 }
 
 .navbar-dark .navbar-nav .nav-link{
-  color: $white;
+  color: #cbd5e1;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+@include desktop {
+  .navigation {
+    background: transparent;
+    padding: 20px 0;
+
+    &.nav-bg,
+    &.nav-solid {
+      background: rgba($hero-bg, 0.95);
+      backdrop-filter: blur(12px);
+    }
+  }
+
+  .navbar-collapse {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 0;
+  }
+}
+
+// Non-home pages: solid nav from start
+body:not(.page-home) .navigation {
+  background: rgba($hero-bg, 0.95);
+  backdrop-filter: blur(12px);
 }

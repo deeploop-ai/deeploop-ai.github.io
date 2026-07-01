@@ -1,23 +1,31 @@
 <!-- hero area -->
-<section class="hero-area bg-primary" id="parallax">
+<section class="hero-area" id="parallax">
+  <div class="hero-grid"></div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-11 mx-auto text-center">
-        <h1 class="text-white font-tertiary mb-4">{{ site.data.settings.hero.hero-title }}</h1>
-        <p class="text-white lead font-secondary mb-5 mx-auto" style="max-width: 700px;">{{ site.data.settings.hero.hero-subtitle }}</p>
+      <div class="col-lg-10 mx-auto text-center">
+        <span class="hero-badge">DeepLoop AI Labs</span>
+        <h1 class="hero-title">{{ site.data.settings.hero.hero-title }}</h1>
+        <p class="hero-subtitle">{{ site.data.settings.hero.hero-subtitle }}</p>
+        <div class="hero-cta">
+          <a href="{{ site.data.settings.hero.hero-cta-primary-link }}" class="btn btn-primary btn-lg mr-3 mb-3">
+            {{ site.data.settings.hero.hero-cta-primary }}
+          </a>
+          <a href="{{ site.data.settings.hero.hero-cta-secondary-link }}" class="btn btn-outline-light btn-lg mb-3">
+            {{ site.data.settings.hero.hero-cta-secondary }}
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  <!-- abstract shapes -->
-  <div class="shape shape-1"></div>
-  <div class="shape shape-2"></div>
-  <div class="shape shape-3"></div>
-  <!-- social icon -->
-  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+  <ul class="hero-social list-unstyled">
     {% for social in site.data.settings.social %}
-    <li class="mb-3"><a class="text-white" href="{{ social.link }}"><i class="{{ social.icon }}"></i></a></li>
+    <li class="mb-3">
+      <a href="{{ social.link }}" target="_blank" rel="noopener noreferrer" aria-label="{{ social.icon }}">
+        <i class="{{ social.icon }}"></i>
+      </a>
+    </li>
     {% endfor %}
   </ul>
-  <!-- /social icon -->
 </section>
 <!-- /hero area -->

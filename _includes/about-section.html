@@ -1,38 +1,29 @@
 <!-- about -->
-<section class="section">
+<section class="section section-about">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <p class="font-secondary paragraph-lg text-dark">{{ site.data.settings.blurb }}</p>
-        <a href="{{ site.data.settings.blurb-btn-link }}" class="btn btn-transparent">{{ site.data.settings.blurb-btn-name }}</a>
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <span class="section-label">About</span>
+        <h2 class="section-title text-left">AI Engineering Lab</h2>
+        <p class="about-text">{{ site.data.settings.blurb }}</p>
+        <a href="{{ site.data.settings.blurb-btn-link }}" class="btn btn-primary">{{ site.data.settings.blurb-btn-name }}</a>
       </div>
+      {% if site.data.settings.work-process %}
+      <div class="col-lg-6">
+        <div class="process-grid">
+          {% for process in site.data.settings.work-process %}
+          <div class="process-card">
+            <div class="process-card-icon">
+              <i class="{{ process.icon }}"></i>
+            </div>
+            <h4>{{ process.title }}</h4>
+            <p>{{ process.content }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
     </div>
   </div>
 </section>
 <!-- /about -->
-
-<!-- work process -->
-{% if site.data.settings.work-process %}
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-around">
-      {% for process in site.data.settings.work-process %}
-      <div class="col-lg-4 col-md-6 text-center">
-        <div class="process-item mb-5 mb-md-0">
-          <i class="{{ process.icon | replace: '.png', '' }} icon d-inline-block mb-4 rounded-circle bg-primary text-white" style="width: 60px; height: 60px; line-height: 60px; font-size: 24px;">
-            {% if process.icon contains '.png' %}
-            <img src="{{ site.baseurl }}/{{ process.icon }}" alt="{{ process.title }}" style="width: 28px; height: 28px;">
-            {% else %}
-            <i class="{{ process.icon }}"></i>
-            {% endif %}
-          </i>
-          <h4 class="mb-4">{{ process.title }}</h4>
-          <p>{{ process.content }}</p>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-<!-- /work process -->

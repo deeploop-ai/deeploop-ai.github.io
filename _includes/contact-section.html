@@ -1,31 +1,39 @@
 <!-- contact -->
-<section class="section section-on-footer" data-background="{{site.baseurl}}/assets/images/backgrounds/bg-dots.png">
+<section class="section section-contact" id="contact">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <span class="section-label">Contact</span>
         <h2 class="section-title">{{ site.data.settings.contact-title }}</h2>
         {% if site.data.settings.contact-message %}
-        <p class="text-muted mb-5 mx-auto" style="max-width: 600px;">{{ site.data.settings.contact-message }}</p>
+        <p class="section-subtitle">{{ site.data.settings.contact-message }}</p>
         {% endif %}
       </div>
+    </div>
+    <div class="row">
       <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-4">Send us a Message</h4>
-          <form action="https://formspree.io/{{ site.data.settings.contact-email }}" method="POST" class="row">
-            <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Your Name" class="form-control px-0 mb-4" required>
+        <div class="contact-card">
+          <div class="row">
+            <div class="col-md-5 contact-info">
+              <h4>Let's Talk</h4>
+              <p>Reach out for project inquiries, training programs, or open-source collaboration.</p>
+              <div class="contact-detail">
+                <i class="ti-email"></i>
+                <a href="mailto:{{ site.data.settings.contact-email }}">{{ site.data.settings.contact-email }}</a>
+              </div>
+              <div class="contact-detail">
+                <i class="ti-github"></i>
+                <a href="https://github.com/deeploop-ai" target="_blank" rel="noopener noreferrer">github.com/deeploop-ai</a>
+              </div>
             </div>
-            <div class="col-md-6">
-              <input type="email" id="email" name="_replyto" placeholder="Email Address" class="form-control px-0 mb-4" required>
+            <div class="col-md-7 contact-cta">
+              <h4>Start a Conversation</h4>
+              <p>Tell us about your AI project, training needs, or open-source collaboration ideas. We typically respond within one business day.</p>
+              <a href="mailto:{{ site.data.settings.contact-email }}?subject=DeepLoop%20AI%20Labs%20Inquiry" class="btn btn-primary btn-lg">
+                <i class="ti-email"></i> {{ site.data.settings.contact-email }}
+              </a>
             </div>
-            <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                placeholder="How can we help you?" rows="5" required></textarea>
-            </div>
-            <div class="col-lg-6 col-10 mx-auto">
-              <button type="submit" class="btn btn-primary w-100">Send Message</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>

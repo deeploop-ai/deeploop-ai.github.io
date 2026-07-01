@@ -1,28 +1,29 @@
 ---
 layout: about
-title: About DeepLoop Labs
-author: DeepLoop Labs
+title: About DeepLoop AI Labs
+author: DeepLoop AI Labs
 ---
 
-DeepLoop Labs is a technology consulting firm specialized in artificial intelligence solutions and elite engineering talent acquisition. We help forward-thinking enterprises navigate the complexities of digital transformation by bridging the gap between cutting-edge AI capabilities and production-ready engineering teams.
+DeepLoop AI Labs is an AI engineering lab that bridges open-source innovation with enterprise-grade delivery. We build the infrastructure that powers agent-native applications, partner with organizations on custom AI development, and train engineering teams to ship production AI systems.
 
-## Our Mission
+## Our Pillars
 
-We believe that AI should be accessible, practical, and transformative for businesses of all sizes. Our mission is to demystify artificial intelligence and deliver tangible business value through intelligent automation, predictive analytics, and scalable technical solutions.
+### Open Source
 
-## What We Do
+We develop and maintain agent-native tools in the open:
 
-**AI Solutions Development**
-We design and implement custom AI solutions tailored to your business needs, from machine learning pipelines and natural language processing systems to computer vision applications and predictive analytics platforms.
+- **[Memoss](https://github.com/deeploop-ai/memoss)** — An agent-native knowledge runtime where LLM agents continuously build and maintain a living knowledge base from your sources.
+- **[Graviton](https://github.com/deeploop-ai/graviton)** — An AI-native Backend-as-a-Service platform built on Go, providing authentication, dynamic databases, file storage, and function execution.
+- **[Bluepilot](https://github.com/deeploop-ai/bluepilot)** — Write Markdown specs, generate interactive SvelteKit prototypes deterministically for fast design review.
 
-**Engineering Team Augmentation**
-We provide senior engineers and technical architects who seamlessly integrate with your existing teams, bringing expertise in cloud infrastructure, distributed systems, and modern development practices.
+### AI Project Development
 
-**Technology Strategy Consulting**
-Our consultants help you chart a clear path forward, evaluating AI readiness, selecting appropriate technologies, and building internal capabilities for long-term success.
+We deliver end-to-end AI solutions for enterprises — from LLM agent systems and RAG pipelines to computer vision and predictive analytics. Our engineers integrate with your existing stack and ship production-ready systems with knowledge transfer built in.
+
+### AI Training
+
+We run hands-on workshops and bootcamps covering LLM application development, agent architecture, prompt engineering, and MLOps. Our training is designed for engineering teams who want to build, not just consume, AI capabilities.
 
 ## Our Approach
 
-We operate as true partners in your success. Rather than delivering generic solutions, we take time to understand your unique challenges, constraints, and objectives. This allows us to architect implementations that genuinely move the needle for your business.
-
-Every engagement is backed by our commitment to knowledge transfer, ensuring your team builds self-sufficiency over time. We measure our success by the sustained impact we create, not by billable hours or project deliverables alone.
+We operate as true partners. Every engagement starts with understanding your unique challenges, and every delivery includes the documentation and training your team needs to sustain momentum. We measure success by the systems you can run independently — not by billable hours alone.

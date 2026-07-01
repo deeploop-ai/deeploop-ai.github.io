@@ -1,80 +1,92 @@
 .hero-area {
-  padding: 250px 0 150px;
+  padding: 180px 0 140px;
   position: relative;
   overflow: hidden;
+  background: $hero-bg;
   @include tablet {
-    padding: 200px 0 100px;
-  }
-
-  h1 {
-    position: relative;
-    z-index: 2;
-    font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    @include tablet {
-      font-size: 2.5rem;
-    }
-  }
-
-  p.lead {
-    font-size: 1.25rem;
-    line-height: 1.7;
-    opacity: 0.9;
+    padding: 140px 0 100px;
   }
 }
 
-// Abstract geometric shapes for hero background
-.shape {
+.hero-grid {
   position: absolute;
-  z-index: 1;
-  border-radius: 50%;
-  opacity: 0.1;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
 }
 
-.shape-1 {
-  width: 400px;
-  height: 400px;
-  background: #fff;
-  top: -100px;
-  right: -100px;
-  animation: float 8s ease-in-out infinite;
+.hero-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 100px;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #a5b4fc;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
 }
 
-.shape-2 {
-  width: 300px;
-  height: 300px;
-  background: #2bfdff;
-  bottom: 10%;
-  left: -50px;
-  animation: float 6s ease-in-out infinite reverse;
-}
-
-.shape-3 {
-  width: 200px;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.15);
-  top: 40%;
-  right: 10%;
-  animation: pulse 4s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateY(-20px) rotate(5deg);
+.hero-title {
+  position: relative;
+  z-index: 2;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: $white;
+  margin-bottom: 24px;
+  @include tablet {
+    font-size: 2.25rem;
   }
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 0.1;
+.hero-subtitle {
+  position: relative;
+  z-index: 2;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  max-width: 680px;
+  margin: 0 auto 36px;
+  @include tablet {
+    font-size: 1.05rem;
   }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.15;
+}
+
+.hero-cta {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-social {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  @include desktop {
+    display: none;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #94a3b8;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: $white;
+      border-color: $primary-color;
+      background: rgba(99, 102, 241, 0.2);
+    }
   }
 }

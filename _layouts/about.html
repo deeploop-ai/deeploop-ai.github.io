@@ -2,11 +2,12 @@
 layout: default
 ---
 <!-- page title -->
-<section class="page-title-alt bg-primary position-relative">
+<section class="page-hero">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        <h1 class="text-white font-tertiary">{{ page.title }}</h1>
+      <div class="col-lg-8 mx-auto text-center">
+        <span class="section-label">About</span>
+        <h1 class="page-hero-title">{{ page.title }}</h1>
       </div>
     </div>
   </div>
@@ -14,10 +15,10 @@ layout: default
 <!-- /page title -->
 
 <!-- about -->
-<section class="section pt-5">
+<section class="section pt-0">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-10">
+      <div class="col-lg-8 about-content">
         {{ content }}
       </div>
     </div>
