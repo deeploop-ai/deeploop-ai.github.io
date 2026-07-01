@@ -52,6 +52,10 @@ opensource:
       description: "Write DESIGN.md and page specs in Markdown, generate runnable SvelteKit prototypes deterministically — fast design review without hand-coding UI."
       tags: ["TypeScript", "SvelteKit", "Design Tools"]
 
+    - tagline: DAG event router for streaming data
+      description: "Go-based event router processing streaming data through Source → Transform → Sink DAG topology — with conditional routing, backpressure, retry/DLQ, and at-least-once delivery."
+      tags: ["Go", "DAG", "Streaming"]
+
 about:
   title: AI Engineering Lab
   blurb: DeepLoop AI Labs is an AI engineering lab focused on three pillars — open-source agent infrastructure, end-to-end AI project development for enterprises, and hands-on AI training that turns teams into builders.

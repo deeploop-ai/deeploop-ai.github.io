@@ -52,6 +52,10 @@ opensource:
       description: "编写 DESIGN.md 和页面规格 Markdown，确定性生成可运行的 SvelteKit 原型——快速设计评审，无需手写 UI 代码。"
       tags: ["TypeScript", "SvelteKit", "设计工具"]
 
+    - tagline: 流式数据 DAG 事件路由
+      description: "基于 Go 的 DAG 事件路由器，通过 Source → Transform → Sink 拓扑处理流式数据——支持条件路由、背压传播、重试/DLQ 与至少一次交付保障。"
+      tags: ["Go", "DAG", "流式处理"]
+
 about:
   title: AI 工程实验室
   blurb: DeepLoop AI Labs 是一家 AI 工程实验室，聚焦三大方向——开源 Agent 基础设施、面向企业的端到端 AI 项目开发，以及将团队培养成 Builder 的实战 AI 培训。

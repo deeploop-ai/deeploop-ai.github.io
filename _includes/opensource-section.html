@@ -14,7 +14,7 @@
     <div class="row">
       {% for project in s.opensource-projects %}
       {% assign i18n_project = t.opensource.projects[forloop.index0] %}
-      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
         <a href="{{ project.url }}" class="oss-card d-block h-100" target="_blank" rel="noopener noreferrer">
           <div class="oss-card-accent" style="background-color: {{ project.color }};"></div>
           <div class="oss-card-body">

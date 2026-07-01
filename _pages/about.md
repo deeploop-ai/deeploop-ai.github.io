@@ -15,6 +15,7 @@ We develop and maintain agent-native tools in the open:
 - **[Memoss](https://github.com/deeploop-ai/memoss)** — An agent-native knowledge runtime where LLM agents continuously build and maintain a living knowledge base from your sources.
 - **[Graviton](https://github.com/deeploop-ai/graviton)** — An AI-native Backend-as-a-Service platform built on Go, providing authentication, dynamic databases, file storage, and function execution.
 - **[Bluepilot](https://github.com/deeploop-ai/bluepilot)** — Write Markdown specs, generate interactive SvelteKit prototypes deterministically for fast design review.
+- **[EventR](https://github.com/deeploop-ai/eventr)** — A Go-based DAG event router for streaming data with Source → Transform → Sink topology, conditional routing, and at-least-once delivery.
 
 ### AI Project Development
 

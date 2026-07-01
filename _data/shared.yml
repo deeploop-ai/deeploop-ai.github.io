@@ -21,3 +21,8 @@ opensource-projects:
     url: "https://github.com/deeploop-ai/bluepilot"
     icon: "ti-palette"
     color: "#0ea5e9"
+
+  - name: EventR
+    url: "https://github.com/deeploop-ai/eventr"
+    icon: "ti-pulse"
+    color: "#f59e0b"
