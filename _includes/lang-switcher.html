@@ -1,0 +1,19 @@
+{% if lang == "en" %}
+  {% assign en_url = page.url %}
+  {% assign zh_url = alt_url %}
+{% else %}
+  {% assign en_url = alt_url %}
+  {% assign zh_url = page.url %}
+{% endif %}
+
+<div class="lang-switcher" role="navigation" aria-label="Language">
+  <a href="{{ en_url | relative_url }}"
+     class="lang-switcher-link{% if lang == 'en' %} is-active{% endif %}"
+     hreflang="en"
+     lang="en">EN</a>
+  <span class="lang-switcher-divider">|</span>
+  <a href="{{ zh_url | relative_url }}"
+     class="lang-switcher-link{% if lang == 'zh' %} is-active{% endif %}"
+     hreflang="zh"
+     lang="zh">中文</a>
+</div>

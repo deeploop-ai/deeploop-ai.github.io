@@ -1,0 +1,113 @@
+lang: en
+lang_label: EN
+alt_lang: zh
+alt_lang_label: 中文
+
+title: DeepLoop AI Labs
+description: Open-source AI infrastructure, custom AI development, and professional AI training.
+copyright: Copyright &copy; 2026 DeepLoop AI Labs
+
+nav:
+  home: Home
+  opensource: Open Source
+  services: Services
+  about: About
+  contact: Contact
+
+menu:
+  - { key: opensource, link: "/#opensource" }
+  - { key: services, link: "/#services" }
+  - { key: about, link: "/about" }
+  - { key: contact, link: "/#contact" }
+
+hero:
+  badge: DeepLoop AI Labs
+  title: Building the Open AI Stack
+  subtitle: We build agent-native infrastructure, deliver custom AI solutions, and train teams to ship production-grade AI systems.
+  cta_primary: Explore Open Source
+  cta_primary_link: "/#opensource"
+  cta_secondary: Work With Us
+  cta_secondary_link: "/#contact"
+
+sections:
+  opensource: Open Source
+  services: Services
+  about: About
+  contact: Contact
+
+opensource:
+  title: Open Source Projects
+  subtitle: Agent-native tools we build in the open — production-ready infrastructure for the AI era.
+  view_github: View on GitHub
+  projects:
+    - tagline: Agent-native knowledge runtime
+      description: "LLM agents continuously build and maintain a living knowledge base from your sources — stored as plain Markdown, always current, always queryable."
+      tags: ["TypeScript", "MCP", "Knowledge Base"]
+
+    - tagline: AI-native Backend-as-a-Service
+      description: "Appwrite-inspired BaaS built on Go — authentication, dynamic document database, file storage, function execution, and an embedded admin console."
+      tags: ["Go", "gRPC", "PostgreSQL"]
+
+    - tagline: Markdown to interactive prototypes
+      description: "Write DESIGN.md and page specs in Markdown, generate runnable SvelteKit prototypes deterministically — fast design review without hand-coding UI."
+      tags: ["TypeScript", "SvelteKit", "Design Tools"]
+
+about:
+  title: AI Engineering Lab
+  blurb: DeepLoop AI Labs is an AI engineering lab focused on three pillars — open-source agent infrastructure, end-to-end AI project development for enterprises, and hands-on AI training that turns teams into builders.
+  btn_link: "/about"
+  btn_name: Learn More About Us
+  work_process:
+    - title: Discover
+      icon: "ti-search"
+      content: "We map your business goals, data landscape, and AI readiness to define a clear, actionable roadmap."
+    - title: Build
+      icon: "ti-settings"
+      content: "Our engineers design and ship production AI systems — from LLM agents and RAG pipelines to full-stack AI applications."
+    - title: Enable
+      icon: "ti-light-bulb"
+      content: "We transfer knowledge through training and documentation so your team can operate and extend AI systems independently."
+
+services:
+  title: What We Do
+  subtitle: Beyond open source — we partner with organizations to build and adopt AI at scale.
+  items:
+    - name: AI Project Development
+      icon: ti-rocket
+      description: "End-to-end AI outsourcing — from LLM agent systems and RAG pipelines to computer vision and predictive analytics. We integrate with your stack and deliver production-ready solutions."
+      features:
+        - "LLM agents & MCP integrations"
+        - "RAG & knowledge systems"
+        - "Custom model fine-tuning"
+        - "Full-stack AI applications"
+      active: true
+
+    - name: AI Training
+      icon: ti-blackboard
+      description: "Hands-on workshops and curriculum for engineering teams — covering LLM application development, agent architecture, prompt engineering, and MLOps best practices."
+      features:
+        - "Corporate AI workshops"
+        - "Agent development bootcamps"
+        - "LLM application engineering"
+        - "Architecture review & mentoring"
+      active: true
+
+contact:
+  title: Get in Touch
+  message: Whether you need a custom AI solution, team training, or want to contribute to our open-source projects — we'd love to hear from you.
+  talk_title: Let's Talk
+  talk_desc: Reach out for project inquiries, training programs, or open-source collaboration.
+  cta_title: Start a Conversation
+  cta_desc: Tell us about your AI project, training needs, or open-source collaboration ideas. We typically respond within one business day.
+  email_subject: DeepLoop AI Labs Inquiry
+
+footer:
+  opensource: Open Source
+  services: Services
+  company: Company
+  ai_development: AI Development
+  ai_training: AI Training
+
+about_page:
+  title: About DeepLoop AI Labs
+  section_label: About

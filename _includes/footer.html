@@ -4,12 +4,12 @@
     <div class="row">
       <div class="col-lg-5 mb-4 mb-lg-0">
         <div class="footer-brand">
-          <span class="navbar-brand-mark">DL</span>
-          <span>{{ site.data.settings.title }}</span>
+          <img src="{{ site.logo }}" alt="{{ t.title }}" class="navbar-brand-logo" width="36" height="36">
+          <span>{{ t.title }}</span>
         </div>
-        <p class="footer-desc">{{ site.data.settings.description }}</p>
+        <p class="footer-desc">{{ t.description }}</p>
         <ul class="list-unstyled footer-social">
-          {% for social in site.data.settings.social %}
+          {% for social in s.social %}
           <li class="d-inline-block mr-3">
             <a href="{{ social.link }}" target="_blank" rel="noopener noreferrer" aria-label="{{ social.icon }}">
               <i class="{{ social.icon }}"></i>
@@ -19,7 +19,7 @@
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-        <h5 class="footer-heading">Open Source</h5>
+        <h5 class="footer-heading">{{ t.footer.opensource }}</h5>
         <ul class="list-unstyled footer-links">
           <li><a href="https://github.com/deeploop-ai/memoss" target="_blank" rel="noopener noreferrer">Memoss</a></li>
           <li><a href="https://github.com/deeploop-ai/graviton" target="_blank" rel="noopener noreferrer">Graviton</a></li>
@@ -27,24 +27,24 @@
         </ul>
       </div>
       <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-        <h5 class="footer-heading">Services</h5>
+        <h5 class="footer-heading">{{ t.footer.services }}</h5>
         <ul class="list-unstyled footer-links">
-          <li><a href="/#services">AI Development</a></li>
-          <li><a href="/#services">AI Training</a></li>
+          <li><a href="{{ lang_prefix }}/#services">{{ t.footer.ai_development }}</a></li>
+          <li><a href="{{ lang_prefix }}/#services">{{ t.footer.ai_training }}</a></li>
         </ul>
       </div>
       <div class="col-lg-2 col-md-6">
-        <h5 class="footer-heading">Company</h5>
+        <h5 class="footer-heading">{{ t.footer.company }}</h5>
         <ul class="list-unstyled footer-links">
-          <li><a href="/about">About</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a href="{{ lang_prefix }}/about">{{ t.nav.about }}</a></li>
+          <li><a href="{{ lang_prefix }}/#contact">{{ t.nav.contact }}</a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p class="mb-0">{{ site.data.settings.copyright | markdownify }}</p>
+      <p class="mb-0">{{ t.copyright | markdownify }}</p>
     </div>
   </div>
 </footer>

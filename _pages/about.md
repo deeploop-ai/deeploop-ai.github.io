@@ -1,7 +1,7 @@
 ---
 layout: about
+lang: en
 title: About DeepLoop AI Labs
-author: DeepLoop AI Labs
 ---
 
 DeepLoop AI Labs is an AI engineering lab that bridges open-source innovation with enterprise-grade delivery. We build the infrastructure that powers agent-native applications, partner with organizations on custom AI development, and train engineering teams to ship production AI systems.

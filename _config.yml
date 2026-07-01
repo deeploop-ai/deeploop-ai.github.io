@@ -1,11 +1,18 @@
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: ""
 
-# Site settings
-logo: "/assets/images/logo.png"
-favicon: "/assets/images/logo.png"
+default_lang: en
+languages:
+  - code: en
+    label: EN
+    home: /
+  - code: zh
+    label: 中文
+    home: /zh/
 
-# Build settings
+logo: "https://avatars.githubusercontent.com/u/157189119"
+favicon: "https://avatars.githubusercontent.com/u/157189119"
+
 markdown: kramdown
 permalink: pretty
 plugins:
@@ -15,12 +22,25 @@ compress_html:
   comments: all
   startings: [html, head, body]
 
-# Pages Path
 defaults:
   - scope:
       path: "_pages"
     values:
       permalink: /:basename:output_ext
+      lang: en
+  - scope:
+      path: "_pages/zh"
+    values:
+      lang: zh
+      permalink: /zh/:basename:output_ext
+  - scope:
+      path: "index.html"
+    values:
+      lang: en
+  - scope:
+      path: "zh/index.html"
+    values:
+      lang: zh
 
 include:
   - _pages
@@ -29,7 +49,6 @@ sass:
   sass_dir: assets/scss
   style: compressed
 
-# Exclude from processing.
 exclude:
   - Gemfile
   - Gemfile.lock

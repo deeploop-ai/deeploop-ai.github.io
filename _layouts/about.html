@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
+{% include locale-setup.html %}
 <!-- page title -->
 <section class="page-hero">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
-        <span class="section-label">About</span>
+        <span class="section-label">{{ t.about_page.section_label }}</span>
         <h1 class="page-hero-title">{{ page.title }}</h1>
       </div>
     </div>

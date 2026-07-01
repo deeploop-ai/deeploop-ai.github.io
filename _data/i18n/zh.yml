@@ -1,0 +1,113 @@
+lang: zh
+lang_label: 中文
+alt_lang: en
+alt_lang_label: EN
+
+title: DeepLoop AI Labs
+description: 开源 AI 基础设施、AI 项目定制开发与专业 AI 培训。
+copyright: Copyright &copy; 2026 DeepLoop AI Labs
+
+nav:
+  home: 首页
+  opensource: 开源项目
+  services: 服务
+  about: 关于
+  contact: 联系
+
+menu:
+  - { key: opensource, link: "/zh/#opensource" }
+  - { key: services, link: "/zh/#services" }
+  - { key: about, link: "/zh/about" }
+  - { key: contact, link: "/zh/#contact" }
+
+hero:
+  badge: DeepLoop AI Labs
+  title: 构建开放的 AI 技术栈
+  subtitle: 我们打造 Agent 原生基础设施，交付定制 AI 解决方案，并培训团队构建生产级 AI 系统。
+  cta_primary: 探索开源项目
+  cta_primary_link: "/zh/#opensource"
+  cta_secondary: 合作咨询
+  cta_secondary_link: "/zh/#contact"
+
+sections:
+  opensource: 开源项目
+  services: 服务
+  about: 关于
+  contact: 联系
+
+opensource:
+  title: 开源项目
+  subtitle: 我们在开源社区构建 Agent 原生工具——面向 AI 时代的基础设施。
+  view_github: 在 GitHub 查看
+  projects:
+    - tagline: Agent 原生知识运行时
+      description: "LLM Agent 持续从各类数据源构建并维护活的知识库——以纯 Markdown 存储，始终保持最新、随时可查询。"
+      tags: ["TypeScript", "MCP", "知识库"]
+
+    - tagline: AI 原生后端即服务
+      description: "基于 Go 构建、灵感来自 Appwrite 的 BaaS 平台——提供身份认证、动态文档数据库、文件存储、函数执行及内嵌管理控制台。"
+      tags: ["Go", "gRPC", "PostgreSQL"]
+
+    - tagline: Markdown 生成交互原型
+      description: "编写 DESIGN.md 和页面规格 Markdown，确定性生成可运行的 SvelteKit 原型——快速设计评审，无需手写 UI 代码。"
+      tags: ["TypeScript", "SvelteKit", "设计工具"]
+
+about:
+  title: AI 工程实验室
+  blurb: DeepLoop AI Labs 是一家 AI 工程实验室，聚焦三大方向——开源 Agent 基础设施、面向企业的端到端 AI 项目开发，以及将团队培养成 Builder 的实战 AI 培训。
+  btn_link: "/zh/about"
+  btn_name: 了解更多
+  work_process:
+    - title: 探索
+      icon: "ti-search"
+      content: "梳理业务目标、数据现状与 AI 就绪度，制定清晰可执行的路线图。"
+    - title: 构建
+      icon: "ti-settings"
+      content: "工程师团队设计并交付生产级 AI 系统——从 LLM Agent、RAG 管道到全栈 AI 应用。"
+    - title: 赋能
+      icon: "ti-light-bulb"
+      content: "通过培训与文档传递知识，让团队能独立运维和扩展 AI 系统。"
+
+services:
+  title: 我们的服务
+  subtitle: 不止于开源——我们与组织合作，规模化构建和落地 AI 能力。
+  items:
+    - name: AI 项目外包开发
+      icon: ti-rocket
+      description: "端到端 AI 外包服务——从 LLM Agent 系统、RAG 管道到计算机视觉和预测分析。我们融入你的技术栈，交付生产就绪的解决方案。"
+      features:
+        - "LLM Agent 与 MCP 集成"
+        - "RAG 与知识系统"
+        - "定制模型微调"
+        - "全栈 AI 应用开发"
+      active: true
+
+    - name: AI 培训
+      icon: ti-blackboard
+      description: "面向工程团队的实战工作坊与课程体系——涵盖 LLM 应用开发、Agent 架构、Prompt 工程及 MLOps 最佳实践。"
+      features:
+        - "企业 AI 工作坊"
+        - "Agent 开发训练营"
+        - "LLM 应用工程"
+        - "架构评审与导师辅导"
+      active: true
+
+contact:
+  title: 联系我们
+  message: 无论你需要定制 AI 方案、团队培训，还是希望参与我们的开源项目——欢迎随时联系。
+  talk_title: 开始对话
+  talk_desc: 欢迎就项目合作、培训计划或开源协作与我们联系。
+  cta_title: 发起咨询
+  cta_desc: 告诉我们你的 AI 项目、培训需求或开源合作想法。我们通常在一个工作日内回复。
+  email_subject: DeepLoop AI Labs 咨询
+
+footer:
+  opensource: 开源项目
+  services: 服务
+  company: 公司
+  ai_development: AI 项目开发
+  ai_training: AI 培训
+
+about_page:
+  title: 关于 DeepLoop AI Labs
+  section_label: 关于

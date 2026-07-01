@@ -2,11 +2,12 @@
 layout: compress
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% if page.lang == 'zh' %}zh-CN{% else %}en{% endif %}">
 
+{% include locale-setup.html %}
 {% include head.html %}
 
-<body{% if page.url == "/" or page.url == "/index.html" %} class="page-home"{% endif %}>
+<body{% if page.url == "/" or page.url == "/index.html" or page.url == "/zh/" or page.url == "/zh/index.html" %} class="page-home"{% endif %}>
 
   {% include header.html %}
 

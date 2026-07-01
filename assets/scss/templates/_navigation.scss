@@ -9,19 +9,11 @@
   }
 }
 
-.navbar-brand-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navbar-brand-logo {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: linear-gradient(135deg, $primary-color, $secondary-color);
-  color: $white;
-  font-family: $secondary-font;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  object-fit: cover;
   flex-shrink: 0;
 }
 
@@ -59,6 +51,52 @@
 
 .navbar-dark .navbar-nav .nav-link{
   color: #cbd5e1;
+}
+
+.nav-lang {
+  margin-left: 8px;
+  padding-left: 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+
+  @include desktop {
+    margin-left: 0;
+    margin-top: 12px;
+    padding-left: 0;
+    border-left: none;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.lang-switcher-link {
+  color: #94a3b8 !important;
+  padding: 4px 8px !important;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $white !important;
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  &.is-active {
+    color: $white !important;
+    background: rgba(99, 102, 241, 0.25);
+  }
+}
+
+.lang-switcher-divider {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  user-select: none;
 }
 
 .navbar-toggler {

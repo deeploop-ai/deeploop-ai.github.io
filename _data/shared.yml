@@ -1,0 +1,23 @@
+contact-email: hello@deeploop.dev
+google-analytics: # UA-XXXXXX-X
+disqus-identifier:
+
+social:
+  - { icon: "ti-github", link: "https://github.com/deeploop-ai" }
+  - { icon: "ti-linkedin", link: "https://linkedin.com/company/deeplooplabs" }
+
+opensource-projects:
+  - name: Memoss
+    url: "https://github.com/deeploop-ai/memoss"
+    icon: "ti-book"
+    color: "#059669"
+
+  - name: Graviton
+    url: "https://github.com/deeploop-ai/graviton"
+    icon: "ti-server"
+    color: "#6366f1"
+
+  - name: Bluepilot
+    url: "https://github.com/deeploop-ai/bluepilot"
+    icon: "ti-palette"
+    color: "#0ea5e9"

@@ -1,18 +1,19 @@
-{% if site.data.settings.opensource-projects %}
+{% if s.opensource-projects %}
 <!-- open source -->
 <section class="section section-opensource" id="opensource">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center mb-5">
-        <span class="section-label">Open Source</span>
-        <h2 class="section-title">{{ site.data.settings.opensource-title }}</h2>
-        {% if site.data.settings.opensource-subtitle %}
-        <p class="section-subtitle">{{ site.data.settings.opensource-subtitle }}</p>
+        <span class="section-label">{{ t.sections.opensource }}</span>
+        <h2 class="section-title">{{ t.opensource.title }}</h2>
+        {% if t.opensource.subtitle %}
+        <p class="section-subtitle">{{ t.opensource.subtitle }}</p>
         {% endif %}
       </div>
     </div>
     <div class="row">
-      {% for project in site.data.settings.opensource-projects %}
+      {% for project in s.opensource-projects %}
+      {% assign i18n_project = t.opensource.projects[forloop.index0] %}
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
         <a href="{{ project.url }}" class="oss-card d-block h-100" target="_blank" rel="noopener noreferrer">
           <div class="oss-card-accent" style="background-color: {{ project.color }};"></div>
@@ -21,15 +22,15 @@
               <i class="{{ project.icon }}"></i>
             </div>
             <h3 class="oss-card-name">{{ project.name }}</h3>
-            <p class="oss-card-tagline">{{ project.tagline }}</p>
-            <p class="oss-card-desc">{{ project.description }}</p>
+            <p class="oss-card-tagline">{{ i18n_project.tagline }}</p>
+            <p class="oss-card-desc">{{ i18n_project.description }}</p>
             <div class="oss-card-tags">
-              {% for tag in project.tags %}
+              {% for tag in i18n_project.tags %}
               <span class="oss-tag">{{ tag }}</span>
               {% endfor %}
             </div>
             <span class="oss-card-link">
-              View on GitHub <i class="ti-arrow-right"></i>
+              {{ t.opensource.view_github }} <i class="ti-arrow-right"></i>
             </span>
           </div>
         </a>

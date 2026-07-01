@@ -1,37 +1,36 @@
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ t.title }}{% endif %}</title>
 
-  <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.data.settings.description}}{%endif%}">
-  
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ t.description }}{% endif %}">
   <meta name="theme-color" content="#0f172a" />
 
-    
-  {% if site.author %}
-  <meta name="author" content="{{ . }}">
+  {% if lang == "en" %}
+  <link rel="alternate" hreflang="zh-CN" href="{{ alt_url | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}">
+  {% else %}
+  <link rel="alternate" hreflang="en" href="{{ alt_url | absolute_url }}">
+  <link rel="alternate" hreflang="zh-CN" href="{{ page.url | absolute_url }}">
   {% endif %}
-  
-  <!-- ** Plugins Needed for the Project ** -->
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+
+  {% if site.author %}
+  <meta name="author" content="{{ site.author }}">
+  {% endif %}
+
   {% for css in site.data.plugins.css %}
   <link rel="stylesheet" href="{{ css | relative_url }}">
   {% endfor %}
 
-  <!-- Main Stylesheet -->
   <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
 
-  <!--Favicon-->
   {% if site.favicon %}
-  <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
-  <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
-  {% else %}
-  <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/x-icon">
-  <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ site.favicon }}" type="image/png">
+  <link rel="icon" href="{{ site.favicon }}" type="image/png">
   {% endif %}
 
-  <!-- google analytics -->
-  {% if site.data.settings.google-analytics %}
+  {% if s.google-analytics %}
     {% include google-analytics.html %}
   {% endif %}
 

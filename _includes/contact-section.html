@@ -3,10 +3,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center mb-5">
-        <span class="section-label">Contact</span>
-        <h2 class="section-title">{{ site.data.settings.contact-title }}</h2>
-        {% if site.data.settings.contact-message %}
-        <p class="section-subtitle">{{ site.data.settings.contact-message }}</p>
+        <span class="section-label">{{ t.sections.contact }}</span>
+        <h2 class="section-title">{{ t.contact.title }}</h2>
+        {% if t.contact.message %}
+        <p class="section-subtitle">{{ t.contact.message }}</p>
         {% endif %}
       </div>
     </div>
@@ -15,11 +15,11 @@
         <div class="contact-card">
           <div class="row">
             <div class="col-md-5 contact-info">
-              <h4>Let's Talk</h4>
-              <p>Reach out for project inquiries, training programs, or open-source collaboration.</p>
+              <h4>{{ t.contact.talk_title }}</h4>
+              <p>{{ t.contact.talk_desc }}</p>
               <div class="contact-detail">
                 <i class="ti-email"></i>
-                <a href="mailto:{{ site.data.settings.contact-email }}">{{ site.data.settings.contact-email }}</a>
+                <a href="mailto:{{ s.contact-email }}">{{ s.contact-email }}</a>
               </div>
               <div class="contact-detail">
                 <i class="ti-github"></i>
@@ -27,10 +27,10 @@
               </div>
             </div>
             <div class="col-md-7 contact-cta">
-              <h4>Start a Conversation</h4>
-              <p>Tell us about your AI project, training needs, or open-source collaboration ideas. We typically respond within one business day.</p>
-              <a href="mailto:{{ site.data.settings.contact-email }}?subject=DeepLoop%20AI%20Labs%20Inquiry" class="btn btn-primary btn-lg">
-                <i class="ti-email"></i> {{ site.data.settings.contact-email }}
+              <h4>{{ t.contact.cta_title }}</h4>
+              <p>{{ t.contact.cta_desc }}</p>
+              <a href="mailto:{{ s.contact-email }}?subject={{ t.contact.email_subject | replace: ' ', '%20' }}" class="btn btn-primary btn-lg">
+                <i class="ti-email"></i> {{ s.contact-email }}
               </a>
             </div>
           </div>
