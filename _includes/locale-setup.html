@@ -1,5 +1,11 @@
 {% assign lang = page.lang | default: site.default_lang | default: "en" %}
-{% assign t = site.data.i18n[lang] %}
+
+{% if lang == "zh" %}
+  {% assign t = site.data.i18n.zh %}
+{% else %}
+  {% assign t = site.data.i18n.en %}
+{% endif %}
+
 {% assign s = site.data.shared %}
 
 {% if lang == "zh" %}
